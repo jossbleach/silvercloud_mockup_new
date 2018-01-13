@@ -6,50 +6,24 @@
 @import navigation
 @import about
 @import services
+@import contact
+@import footer
+@import 'fred.css'
 body
     -webkit-font-smoothing: antialiased
-.section__white--contact
-    max-width: 100%
+.laptop
+    width: 600px
+    height: 486px
     background:
-        color: #fff
-    padding:
-        bottom: 50px
-.col__padded
-    padding: 10px
-.form__label
-    display: block
-    position: relative
-    top: 27px
-    left: 0
+        image: url(../img/laptops.png)
+        size: contain
+        position: center
+        repeat: no-repeat
+    margin: 0 auto
+.work__copy
+    letter-spacing: 4px
     font:
-        size: 16px
-        family: $font__copy
-        weight: 300
-    color: $colour__secondary
-    z-index: 1
-.input__contact
-    background: none
-    border: none
-    border-bottom: 1px solid $colour__secondary
-    width: 400px
-    transition: all 0.3s ease
-    margin-bottom: 10px
-    font:
-        family: $font__copy
-        size: 16px
-        weight: 300
-    color: $colour__primary
-    z-index: 2
-    &:focus, &:valid
-        outline: none
-        border-bottom: 1px solid $colour__primary
-        transition: all 0.3s ease
-.input__contact--textarea
-    height: 75px
-.screenreader
-    position: absolute
-    left: -10000px
-    top: auto
-    width: 1px
-    height: 1px
-    overflow: hidden
+        size: 12px
+    margin-bottom: 25px
+.section__white--work
+    background: linear-gradient(to bottom, $colour__secondary--50 0%, #ffffff 100%)
